@@ -1,20 +1,29 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import About from "./components/About";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 import './App.css';
+import Navbar from './Components/Navbar';
+import MyWork from './Pages/MyWork';
+
+const useStyles = makeStyles({});
 
 function App() {
+  const classes = useStyles();
   return (
-    <Router>
-      
-        <Navigation/>
-          <div>
-            <Route exact path="/about" component={About}/>
-          </div>
-        
-  
+    <div className={classes.container}>
+      <Navbar/>
+        <Switch>
+        <Route exact path="/" render={props => <Home {...props} />} />     
+        <Route path="/contact" render={props => <Contact {...props} />} /> 
+        <Route path="/mywork" render={props => <MyWork {...props} />} /> 
+        <Route exact path="/about" render={props => <About {...props} />} /> 
+        </Switch>
 
-    </Router>
+    </div>
+    
   );
 }
 
