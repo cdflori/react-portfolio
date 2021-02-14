@@ -7,9 +7,10 @@ import IconButton from "@material-ui/core/IconButton";
 import FilterVintageSharpIcon from "@material-ui/icons/FilterVintageSharp";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import NavButton from './NavButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,8 +27,12 @@ const useStyles = makeStyles((theme) => ({
   headerStyle: {
     display: "flex",
     flex: 1,
-    justifyContent: "space-evenly"
+    justifyContent: "flex-center",
+    paddingLeft: '40px'
   }
+  // headerBtn: {
+  //   marginRight: '10px'
+  // }
 }));
 
 const Navbar = (props) => {
@@ -47,9 +52,9 @@ const Navbar = (props) => {
     setAnchorEl(null);
   };
 
-  const handleButtonClick = (pageURL) => {
-    history.push(pageURL);
-  };
+  // const handleButtonClick = (pageURL) => {
+  //   history.push(pageURL);
+  // };
 
   const menuItems = [
     {
@@ -61,8 +66,8 @@ const Navbar = (props) => {
       pageURL: '/about',
     },
     {
-      menuTitle: 'My Work',
-      pageURL: '/mywork',
+      menuTitle: 'Work',
+      pageURL: '/work',
     },
     {
       menuTitle: 'Contact',
@@ -75,7 +80,7 @@ const Navbar = (props) => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Photos
+            Floresent Design
           </Typography>
             {mobile ? (
               <>
@@ -115,30 +120,7 @@ const Navbar = (props) => {
               </>
             ) : (
               <div className={classes.headerStyle}>
-                <Button
-                  variant="contained"
-                  onClick={() => handleButtonClick("/")}
-                >
-                  HOME
-                </Button>
-                <Button
-                  variant="contained"
-                  onClick={() => handleButtonClick("/about")}
-                >
-                  ABOUT
-                </Button>
-                <Button
-                  variant="contained"
-                  onClick={() => handleButtonClick("/mywork")}
-                >
-                  MY WORK
-                </Button>
-                <Button
-                  variant="contained"
-                  onClick={() => handleButtonClick("/contact")}
-                >
-                  CONTACT
-                </Button>
+                <NavButton/>
               </div>
             )}
         </Toolbar>
