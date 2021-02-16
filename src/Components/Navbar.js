@@ -10,7 +10,7 @@ import Menu from "@material-ui/core/Menu";
 // import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import NavButton from './NavButton';
+import NavButton from './NavButton/NavButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +23,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       flexGrow: 1,
     }
+  },
+  navBar: {
+    background: "#F9ECE5",
+    padding: "15px",
+    boxShadow: "none"
   },
   headerStyle: {
     display: "flex",
@@ -77,7 +82,7 @@ const Navbar = (props) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="sticky" className={classes.navBar}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Floresent Design
