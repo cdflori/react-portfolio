@@ -10,7 +10,7 @@ import Menu from "@material-ui/core/Menu";
 // import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import NavButton from './NavButton/NavButton';
+import NavButton2 from './NavButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,16 +18,26 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color: "#C68D90"
   },
   title: {
     [theme.breakpoints.down("xs")]: {
       flexGrow: 1,
-    }
+    },
+    fontSize: "27px",
+    fontWeight: "bold",
+    color: "#C68D90",
+    cursor: "pointer"
   },
   navBar: {
-    background: "#F9ECE5",
+    background: "transparent",
     padding: "15px",
-    boxShadow: "none"
+    boxShadow: "none",
+    margin: "0 auto",
+    listStyleType: "none",
+    overflow: "hidden",
+    maxWidth: "auto"
+
   },
   headerStyle: {
     display: "flex",
@@ -57,9 +67,9 @@ const Navbar = (props) => {
     setAnchorEl(null);
   };
 
-  // const handleButtonClick = (pageURL) => {
-  //   history.push(pageURL);
-  // };
+  const handleBtnClick = (pageURL) => {
+    history.push(pageURL);
+  };
 
   const menuItems = [
     {
@@ -84,15 +94,16 @@ const Navbar = (props) => {
     <div className={classes.root}>
       <AppBar position="sticky" className={classes.navBar}>
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography onClick={() => handleBtnClick("/")} variant="h6" className={classes.title}>
             Floresent Design
           </Typography>
+          
             {mobile ? (
               <>
                 <IconButton
                   edge="start"
                   className={classes.menuButton}
-                  color="inherit"
+                  // color="inherit"
                   onClick={handleMenu}
                   aria-label="menu"
                 >
@@ -125,7 +136,7 @@ const Navbar = (props) => {
               </>
             ) : (
               <div className={classes.headerStyle}>
-                <NavButton/>
+                <NavButton2/>
               </div>
             )}
         </Toolbar>
