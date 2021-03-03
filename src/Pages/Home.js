@@ -1,10 +1,10 @@
 import React from "react";
-import HomeJumbo from "../Components/HomeJumbo";
+import HomeSection from "../Components/HomeSection";
 
 function Home() {
     return(
         <div>
-        <HomeJumbo/>
+        <HomeSection/>
         </div>
     );
 };
