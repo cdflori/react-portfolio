@@ -1,0 +1,54 @@
+
+.brand-title {
+    /* flex-grow: 1; */
+    font-size: 40px;
+    font-weight: bolder;
+    color: #f1a0ab;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.root {
+    flex-grow: 1;
+    margin: 0px 80px 0px;
+    font-size: 22px;
+    /* // fontWeight: "bold", */
+    position: relative;
+    justify-content: space-evenly;
+    width: 0;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+/* @media (min-width: 544px) {
+    .root {
+        overflow: hidden;
+    }
+    } */
+
+.link-base {
+    display: block;
+    position: absolute;
+    overflow: visible;
+} 
+
+.link {
+    color: #515054;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 16pt;
+    margin-left: 30px;
+    box-sizing: border-box;
+
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #f1a0ab;
+}
+
+.navbar-toggler-icon {
+    border-color: none;
+    background-image: url();
+  }

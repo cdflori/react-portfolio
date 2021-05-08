@@ -1,0 +1,27 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Nav } from "react-bootstrap";
+// import MyNavbar from '../Navbar/MyNavbar';
+import "./style.css";
+
+export default function MainNavbar() {
+
+
+  return (
+    <Navbar collapseOnSelect expand="lg" className="top-header">
+        <h2 className="brand-title" href="#home">
+          Floresent Home
+        </h2>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+
+        <Nav className="nav">
+        <Nav.Link className="link">ABOUT</Nav.Link>
+        <Nav.Link className="link">MY WORK</Nav.Link>
+        <Nav.Link className="link">CONTACT</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+      
+    </Navbar>
+  );
+}

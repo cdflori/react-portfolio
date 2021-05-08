@@ -1,20 +1,20 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import './App.css';
-import Navbar from './Components/Navbar';
+import MainNavbar from './Components/MainNav/MainNav';
 import Work from './Pages/Work';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-const useStyles = makeStyles({});
+
 
 function App() {
-  const classes = useStyles();
+  
   return (
-    <div className={classes.container}>
-      <Navbar/>
+    <div>
+      <MainNavbar/>
         <Switch>
         <Route exact path="/" render={props => <Home {...props} />} />     
         <Route path="/contact" render={props => <Contact {...props} />} /> 

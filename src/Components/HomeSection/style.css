@@ -1,0 +1,171 @@
+.jumboContainer {
+overflow: hidden;
+position: relative;
+z-index: 1000;
+padding-top: 55px;
+display: block;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.boxContainer {
+  padding: 0;
+  /* max-width: 790px; */
+  margin: 0 auto;
+  background: none;
+}
+
+@media (min-width: 1300px) {
+  .boxContainer {
+    padding: 3em 7em 3em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .boxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 544px) {
+  .boxContainer {
+    padding: 2em 0 0;
+  }
+}
+
+.flexyBox {
+  opacity: 1;
+  transform: translateY(0px);
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  flex: 1;
+  flex-basis: auto;
+  -webkit-flex: 1;
+  padding-top: 30px;
+  /* padding-left: 30px; */
+}
+
+.header {
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  color: rgb(71, 71, 71);
+  line-height: 110%;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .2s ease-in-out;
+}
+
+.subHeader {
+  line-height: 1.1em;
+  line-height: 1.7;
+  color: #515054;
+  transition: all .2s ease-in-out;
+  font-weight: 500;
+}
+
+
+@media (min-width: 1000px) {
+.header {
+    font-size: 4.5em;
+}
+}
+
+
+@media (min-width: 544px) {
+.subHeader {
+    margin: 1.3em 0 0;
+}
+}
+
+.imgBox {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .imgBox {
+    max-width: 555px;
+    height: 555px;
+  }
+}
+
+@media (min-width: 544px) {
+  .imgBox {
+    max-width: 555px;
+    height: 555px;
+  }
+}
+
+.profileImg {
+  border-radius: 40px;
+  padding-right: 30px;
+}
+
+.creationBtn {
+  background: linear-gradient(177deg, #F3A8B2, #ffcfd4);
+  border: none;
+  padding: 18px 50px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  letter-spacing: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.creationBtn:hover {
+  background: linear-gradient(177deg, #f1a0ab, #fecacf);
+}
+
+/* .profileImg {
+
+} */
+
+/* .root {
+    padding: 10px
+  }; */
+
+  /* container {
+    padding: theme.spacing(8);
+  }; */
+
+  /* paper1 {
+    padding: 10px;
+    text-align: left;
+    color: gray;
+    background: none;
+    /* // boxShadow: none; */
+    /* font-size: 5.5em;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    line-height: 110%;
+    transition: all .2s ease-in-out
+
+  }; */ 
+
+  /* .paper2 {
+    padding: 10px;
+    text-align: left;
+    color: gray;
+    background: none;
+    box-shadow: none;
+    font-size: 3vh;
+    font-weight: bold;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }; */
+
+  /* .media {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden
+
+  }; */

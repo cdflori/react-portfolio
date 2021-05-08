@@ -10,7 +10,9 @@ import Menu from "@material-ui/core/Menu";
 // import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import NavButton2 from './NavButton';
+import NavButton from './NavButton';
+// import './style.css';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,15 +20,15 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: "#C68D90"
+    color: "#f1a0ab"
   },
   title: {
     [theme.breakpoints.down("xs")]: {
       flexGrow: 1,
     },
     fontSize: "27px",
-    fontWeight: "bold",
-    color: "#C68D90",
+    fontWeight: "bolder",
+    color: "#f1a0ab",
     cursor: "pointer"
   },
   navBar: {
@@ -127,16 +129,16 @@ const Navbar = (props) => {
                   {menuItems.map(menuItem => {
                     const { menuTitle, pageURL } = menuItem;
                     return (
-                      <MenuItem onClick={() => handleMenuClick(pageURL)}>
+                      <Typography className="menuItem" onClick={() => handleMenuClick(pageURL)}>
                         {menuTitle}
-                      </MenuItem>
+                      </Typography>
                     );
                   })}
                 </Menu>
               </>
             ) : (
               <div className={classes.headerStyle}>
-                <NavButton2/>
+                <NavButton/>
               </div>
             )}
         </Toolbar>
