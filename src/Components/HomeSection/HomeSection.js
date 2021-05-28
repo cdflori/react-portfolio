@@ -16,8 +16,8 @@ export default function HomeSection() {
               />
           </div>
           <div className="flexyBox">
-            <h1 className="header">Hi, I'm Christina!</h1>
-            <h4 className="subHeader">I am a Front End Developer and Designer</h4>
+            <h1 className="header">Hi! I'm Christina</h1>
+            <h3 className="subHeader">I am a Front End Developer and Designer.</h3>
             <br/>
             <button className="creationBtn">SEE MY WORK</button>
           </div>
