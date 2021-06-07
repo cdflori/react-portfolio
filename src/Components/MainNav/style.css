@@ -18,7 +18,7 @@
     justify-content: space-evenly;
     width: 0;
     margin-right: 30px;
-    padding: 5px;
+    padding: 15px;
 }
 
 /* @media (min-width: 544px) {
@@ -52,3 +52,7 @@
     border-color: none;
     background-image: url();
   }
+
+.top {
+    padding-top: 25px
+}

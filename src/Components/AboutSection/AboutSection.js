@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
+
+// import SkillCarousel from '../SkillCarousel/SkillCarousel';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./style.css";
 
@@ -8,7 +10,7 @@ export default function AboutSection() {
   return (
     <section className="jumboContainer container">
       <div className="aboutContainer">
-        <h3>Text Here</h3>
+        <h3 className='subHeader'>A few things I'm working with every day.</h3>
       </div>
       {/* <div className="aboutContainer"> */}
         {/* <FontAwesomeIcon className= 'iconTest' icon={['fab', 'react']}/> */}
@@ -61,13 +63,13 @@ export default function AboutSection() {
             </Col>
             <Col>
               <button className="skillBtn">
-                <i class="fab fa-node-js fa-4x icon"></i>
-                Node.js
+                <i class="fab fa-git fa-4x icon"></i>
+                GIT
               </button>
             </Col>
             <Col>
               <button className="skillBtn">
-                <i class="fab fa-npm fa-4x icon"></i>
+                <i class="fab fa-aws fa-4x icon"></i>
                 NPM
               </button>
             </Col>

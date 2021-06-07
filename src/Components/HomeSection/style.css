@@ -111,6 +111,8 @@ padding-right: 30px;
   border: none;
   padding: 18px 50px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
   color: white;
   font-weight: bold;
   font-size: 15pt;
@@ -121,6 +123,8 @@ padding-right: 30px;
 
 .creationBtn:hover {
   background: linear-gradient(177deg, #f1a0ab, #fecacf);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 /* .profileImg {
