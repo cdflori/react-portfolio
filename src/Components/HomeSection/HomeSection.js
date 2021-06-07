@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function HomeSection() {
   return (
-      <section className="jumboContainer container">
+      <section id="#home" className="jumboContainer container">
         <div className="boxContainer">
         <div className="flexyBox imgBox">
               <Image

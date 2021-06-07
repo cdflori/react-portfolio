@@ -1,0 +1,43 @@
+.jumboContainer {
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+    padding-top: 55px;
+    display: block;
+    padding-left: 43px;
+    padding-right: 30px;
+    }
+  
+
+.containerCol {
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+    
+.headerRow{
+    padding-top: 190px;
+    padding-bottom: 30px;
+}
+
+.headerText{
+    justify-content: flex-start;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: rgb(71, 71, 71)
+}
+
+.subText{
+    font-size: 1.9em;
+    font-weight: bolder;
+    color: rgb(71, 71, 71)
+}
+
+.workIcon {
+    color: #f1a0ab;
+    padding-bottom: 20px;
+
+}
+
+.text {
+    font-size: 1.2em;
+}

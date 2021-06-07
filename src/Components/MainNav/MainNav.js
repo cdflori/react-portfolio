@@ -16,9 +16,9 @@ export default function MainNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
 
         <Nav className="nav">
-        <Nav.Link className="link">ABOUT</Nav.Link>
-        <Nav.Link className="link">MY WORK</Nav.Link>
-        <Nav.Link className="link">CONTACT</Nav.Link>
+        <Nav.Link className="link" href="#about">ABOUT</Nav.Link>
+        <Nav.Link className="link" href="#mywork">MY WORK</Nav.Link>
+        <Nav.Link className="link" href="#contact">CONTACT</Nav.Link>
         </Nav>
         </Navbar.Collapse>
       
