@@ -9,7 +9,7 @@ export default function MainNavbar() {
 
   return (
     <Navbar collapseOnSelect expand="lg" className="top-header top">
-        <h2 className="brand-title" href="#home">
+        <h2 className="brand-title" href="/">
           Christina Flores
         </h2>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
