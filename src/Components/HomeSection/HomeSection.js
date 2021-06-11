@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image } from "react-bootstrap";
 import "./style.css";
+import flores from "../../assets/cflorespic.png";
 
 export default function HomeSection() {
   return (
@@ -10,18 +11,12 @@ export default function HomeSection() {
         <div className="flexyBox imgBox">
               <Image
                 fluid
-                // src="../../assets/cflorespic.png"
-                src={process.env.PUBLIC_URL + "/assets/cflorespic.png"}
+                src={flores}
+                // src={process.env.PUBLIC_URL + "/assets/cflorespic.png"}
                 aria="Christina Flores Image"
                 className="profileImg"
               />
-              <Image
-                fluid
-                // src="../../assets/cflorespic.png"
-                src={process.env.PUBLIC_URL + "assets/cflorespic.png"}
-                aria="Christina Flores Image"
-                className="profileImg"
-              />
+
           </div>
           <div className="flexyBox">
             <h1 className="header">Hi! I'm Christina</h1>
