@@ -33,7 +33,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/Upick.png"}
+                src={process.env.PUBLIC_URL + "assets/upick.png"}
                 aria="UPick Image"
                 className="workImg"
               />
@@ -72,7 +72,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/Unleash.png"}
+                src={process.env.PUBLIC_URL + "assets/unleash.png"}
                 aria="Unleash Image"
                 className="workImg"
               />
@@ -112,7 +112,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/PartiPug.png"}
+                src={process.env.PUBLIC_URL + "assets/partipug.png"}
                 aria="PartiPug Image"
                 className="workImg"
               />
@@ -155,7 +155,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/BurgerApp.png"}
+                src={process.env.PUBLIC_URL + "assets/burgerapp.png"}
                 aria="Burger App Image"
                 className="workImg"
               />
@@ -194,7 +194,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/FitnessTracker.png"}
+                src={process.env.PUBLIC_URL + "assets/fitnesstracker.png"}
                 aria="Fitness Tracker"
                 className="workImg"
               />
@@ -233,7 +233,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/MyBookList.png"}
+                src={process.env.PUBLIC_URL + "assets/mybooklist.png"}
                 aria="My Book List"
                 className="workImg"
               />

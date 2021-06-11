@@ -10,7 +10,7 @@ export default function HomeSection() {
         <div className="flexyBox imgBox">
               <Image
                 fluid
-                src={process.env.PUBLIC_URL + "assets/CFloresPic.jpg"}
+                src={process.env.PUBLIC_URL + "assets/cflorespic.jpg"}
                 aria="Christina Flores Image"
                 className="profileImg"
               />
