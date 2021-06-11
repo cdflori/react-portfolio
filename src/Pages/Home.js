@@ -3,6 +3,7 @@ import HomeSection from "../Components/HomeSection/HomeSection";
 import AboutSection from "../Components/AboutSection/AboutSection";
 import MyWork from "../Components/MyWork/MyWork";
 import Overview from '../Components/Overview/Overview';
+import Contact from '../Components/Contact/Contact';
 
 function Home() {
     return(
@@ -10,7 +11,8 @@ function Home() {
         <HomeSection/>
         <Overview/>
         <MyWork/>
-        <AboutSection/>
+        {/* <AboutSection/> */}
+        <Contact/>
         </div>
     );
 };

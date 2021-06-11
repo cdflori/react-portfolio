@@ -2,15 +2,13 @@
     overflow: hidden;
     position: relative;
     z-index: 1000;
-    padding-top: 35px;
+    /* padding-top: 15px; */
     display: block;
     padding-left: 20px;
     padding-right: 20px;
     }
     
     .aboutContainer {
-      /* padding: 0; */
-      /* max-width: 790px; */
       margin: 0 auto;
       background: none;
     }
@@ -62,10 +60,10 @@
     .subHeader {
       
       line-height: 1.1em;
-      line-height: 1.7;
       color: #515054;
       transition: all .2s ease-in-out;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 2em;
     }
     
     
@@ -120,10 +118,16 @@
       cursor: none;
       font-weight: bold;
       font-size: 19pt;
+      
       letter-spacing: 1px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       
     }
+
+    /* .skillBtn:hover {
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    } */
     
     .creationBtn:hover {
       background: linear-gradient(177deg, #f1a0ab, #fecacf);

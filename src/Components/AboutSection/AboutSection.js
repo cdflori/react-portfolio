@@ -10,7 +10,7 @@ export default function AboutSection() {
   return (
     <section className="jumboContainer container">
       <div className="aboutContainer">
-        <h3 className='subHeader'>A few things I'm working with every day.</h3>
+        <h3 className='subHeader'>What I am working with everyday!</h3>
       </div>
       {/* <div className="aboutContainer"> */}
         {/* <FontAwesomeIcon className= 'iconTest' icon={['fab', 'react']}/> */}

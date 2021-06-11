@@ -1,14 +1,16 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 import "./style.css";
+import AboutSection from "../AboutSection/AboutSection";
 
 export default function MyWork() {
   return (
-    <section className="jumboContainer1">
+    <section className="jumboContainer1 container">
+      <AboutSection/>
       <div className="container">
         <Row id="mywork" className="headerRow2">
           <h2 className="headerText">Latest Projects</h2>
         </Row>
-      </div>  
+      </div>   
       <div className="container">
         <Row className="workRow">
           <Col>
