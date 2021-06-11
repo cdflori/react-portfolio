@@ -1,6 +1,12 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 import "./style.css";
 import AboutSection from "../AboutSection/AboutSection";
+import upick from "../../assets/upick.png";
+import unleash from "../../assets/unleash.png";
+import partipug from "../../assets/partipug.png";
+import fitness from "../../assets/fitnesstracker.png";
+import book from "../../assets/mybooklist.png";
+import burger from "../../assets/burgerapp.png";
 
 export default function MyWork() {
   return (
@@ -33,7 +39,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/upick.png"}
+                src={upick}
                 aria="UPick Image"
                 className="workImg"
               />
@@ -72,7 +78,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/unleash.png"}
+                src={unleash}
                 aria="Unleash Image"
                 className="workImg"
               />
@@ -112,7 +118,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/partipug.png"}
+                src={partipug}
                 aria="PartiPug Image"
                 className="workImg"
               />
@@ -155,7 +161,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/burgerapp.png"}
+                src={burger}
                 aria="Burger App Image"
                 className="workImg"
               />
@@ -194,7 +200,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/fitnesstracker.png"}
+                src={fitness}
                 aria="Fitness Tracker"
                 className="workImg"
               />
@@ -233,7 +239,7 @@ export default function MyWork() {
               </Card.Body>
               <Card.Img
                 fluid
-                src={process.env.PUBLIC_URL + "assets/mybooklist.png"}
+                src={book}
                 aria="My Book List"
                 className="workImg"
               />
