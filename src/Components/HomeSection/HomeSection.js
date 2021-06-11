@@ -11,7 +11,7 @@ export default function HomeSection() {
               <Image
                 fluid
                 // src="../../assets/cflorespic.png"
-                src={process.env.PUBLIC_URL + "/assets/cflorespic.jpg"}
+                src={process.env.PUBLIC_URL + "/assets/cflorespic.png"}
                 aria="Christina Flores Image"
                 className="profileImg"
               />
