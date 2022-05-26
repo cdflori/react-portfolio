@@ -19,7 +19,7 @@ export default function MainNavbar() {
         <Nav.Link className="link" href="#about">ABOUT</Nav.Link>
         <Nav.Link className="link" href="#mywork">MY WORK</Nav.Link>
         <Nav.Link className="link" href="#contact">CONTACT</Nav.Link>
-        <Nav.Link className="link" href="https://drive.google.com/file/d/1qVzWRP8bWjhqptqQrtQGEay_vpNSqKbQ/view?usp=sharing" target="_blank" rel="noreferrer noopener">RESUME</Nav.Link>
+        <Nav.Link className="link" href="https://drive.google.com/file/d/1Hc7A7faT5re_epq5ylmihzeniJdaLXs6/view?usp=sharing" target="_blank" rel="noreferrer noopener">RESUME</Nav.Link>
         </Nav>
         </Navbar.Collapse>
       
